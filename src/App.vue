@@ -19,7 +19,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <li><RouterLink class="navbar-link" to="/components">Components</RouterLink></li>
         <li><RouterLink class="navbar-link" to="/docs">Documentation</RouterLink></li>
         <li>
-          <a class="navbar-link" href="https://github.com/EriyaDev/vue-side-project"
+          <a class="navbar-link" href="https://github.com/EriyaDev/Nexa-UI"
             ><i class="ri-github-fill text-xl"></i
           ></a>
         </li>

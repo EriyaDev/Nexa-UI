@@ -1,20 +1,27 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { ref } from 'vue'
 // import { useDarkMode } from '@/composables/useDarkMode'
 
 // const { isDark, toggleDark } = useDarkMode()
+
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
 </script>
 
 <template>
   <div
     class="header bg-primary w-full py-4 fixed top-0 left-0 z-50 border-b border-b-text-secondary/10"
   >
-    <nav class="container mx-auto flex flex-row items-center justify-between">
+    <nav class="container mx-auto flex flex-row items-center justify-between px-3">
       <RouterLink to="/" class="text-xl font-bold font-grotesk"
         ><span class="text-avocado-600">Nexa</span> UI</RouterLink
       >
 
-      <ul class="flex flex-row items-center space-x-4">
+      <ul class="hidden md:flex flex-row items-center space-x-4">
         <li><RouterLink class="navbar-link" to="/">Home</RouterLink></li>
         <li><RouterLink class="navbar-link" to="/components">Components</RouterLink></li>
         <li><RouterLink class="navbar-link" to="/docs">Documentation</RouterLink></li>
@@ -37,6 +44,28 @@ import { RouterLink, RouterView } from 'vue-router'
           </button>
         </li> -->
       </ul>
+
+      <div class="relative md:hidden">
+        <button class="md:hidden" v-on:click="toggleMenu">
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+
+        <div
+          class="absolute top-10 right-10 bg-primary border border-text-primary/10 p-5 rounded-md"
+          v-if="isMenuOpen"
+        >
+          <ul class="flex flex-col items-end space-y-2">
+            <li><RouterLink class="navbar-link" to="/">Home</RouterLink></li>
+            <li><RouterLink class="navbar-link" to="/components">Components</RouterLink></li>
+            <li><RouterLink class="navbar-link" to="/docs">Documentation</RouterLink></li>
+            <li>
+              <a class="navbar-link" href="https://github.com/EriyaDev/Nexa-UI"
+                ><i class="ri-github-fill text-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </div>
   <RouterView v-slot="{ Component }">

@@ -16,11 +16,11 @@
           A production-ready UI component library for React, Vue, and Tailwind. Clean by default,
           fully reusable, and designed to scale with your product.
         </p>
-        <div class="flex flex-row items-center gap-4 mt-6">
-          <router-link to="/components" class="btn-primary uppercase"
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 mt-6">
+          <router-link to="/components" class="btn-primary w-fit uppercase"
             >Browse Components</router-link
           >
-          <router-link to="/docs" class="btn-secondary uppercase">View Docs</router-link>
+          <router-link to="/docs" class="btn-secondary w-fit uppercase">View Docs</router-link>
         </div>
       </div>
     </div>

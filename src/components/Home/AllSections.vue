@@ -7,7 +7,7 @@ import SectionHeader from './SectionHeader.vue'
 <template>
   <div class="section-container relative px-3">
     <SectionHeader
-      title="Tailwind CSS Sections"
+      title="Nexa UI Sections"
       description="Browse a complete set of clean, reusable UI sections built for modern frontend workflows with Tailwind CSS. "
     ></SectionHeader>
 

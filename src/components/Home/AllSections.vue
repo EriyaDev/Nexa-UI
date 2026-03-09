@@ -13,16 +13,19 @@ import SectionHeader from './SectionHeader.vue'
 
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
       <router-link to="/">
-        <ComponentCard title="Hero Sections" content="<h2 class='text'>COMING SOON</h2>" />
+        <ComponentCard title="Hero Sections" content="<h2 class='text-small'>COMING SOON</h2>" />
       </router-link>
       <router-link to="/">
-        <ComponentCard title="About Sections" content="<h2 class='text'>COMING SOON</h2>" />
+        <ComponentCard title="About Sections" content="<h2 class='text-small'>COMING SOON</h2>" />
       </router-link>
       <router-link to="/">
-        <ComponentCard title="Testimonial Sections" content="<h2 class='text'>COMING SOON</h2>" />
+        <ComponentCard
+          title="Testimonial Sections"
+          content="<h2 class='text-small'>COMING SOON</h2>"
+        />
       </router-link>
       <router-link to="/">
-        <ComponentCard title="FAQ Sections" content="<h2 class='text'>COMING SOON</h2>" />
+        <ComponentCard title="FAQ Sections" content="<h2 class='text-small'>COMING SOON</h2>" />
       </router-link>
     </div>
   </div>

@@ -44,6 +44,14 @@ import { RouterLink, RouterView } from 'vue-router'
       <component :is="Component" />
     </Transition>
   </RouterView>
+
+  <div
+    class="flex flex-row items-center justify-center py-10 border-t border-b border-text-primary/10"
+  >
+    <p class="text-body opacity-55">
+      Made with ❤️ by <a class="link" href="https://github.com/EriyaDev">Elijah Emmanuel</a>
+    </p>
+  </div>
 </template>
 
 <style>

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "Buttons",
+    "name": "Buttons",
+    "description": "Reusable, accessible buttons with multiple variants, sizes, and states. Fully responsive and easily customizable using TailwindCSS utility classes for production-ready interfaces.",
+    "components": [
+      {
+        "name": "Button",
+        "code": "<button \n            class='bg-black text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer uppercase'>\n            Button\n          </button>\n\n          <button \n            class='bg-white text-black font-space-mono text-base  py-3 px-6 rounded-full border border-black/20 hover:bg-black/5 transition-all hover:cursor-pointer uppercase'>\n            Button\n          </button>"
+      },
+      {
+        "name": "Button Invert Color on Hover",
+        "code": "<button \n            class='bg-black text-white font-space-mono text-base border py-3 px-6 rounded-full hover:bg-white hover:text-black  transition-all hover: duration-300 hover:cursor-pointer uppercase'>\n            Button\n          </button>\n\n          <button \n            class='bg-white text-black font-space-mono text-base border py-3 px-6 rounded-full hover:bg-black hover:text-white  transition-all hover: duration-300 hover:cursor-pointer uppercase'>\n            Button\n          </button>"
+      },
+      {
+        "name": "Button with Icon",
+        "code": "<button \n            class='bg-black text-white font-space-mono text-base  py-3 px-6 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer uppercase'>\n            <i class='ri-add-circle-fill text-white'></i>\n            Button\n          </button>\n\n          <button \n            class='bg-white text-black font-space-mono text-base  py-3 px-6 rounded-full border border-black/20 hover:bg-black/5 transition-all hover:cursor-pointer uppercase'>\n            <i class='ri-add-circle-fill text-black'></i>\n            Button\n          </button>"
+      },
+      {
+        "name": "Button with Icon Animation",
+        "code": "<button \n            class='bg-black text-white font-space-mono text-base py-3 px-6 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer uppercase group'>\n            Button\n            <i class='ri-arrow-right-line text-white group-hover:ml-2 transition-all'></i>\n          </button>\n\n          <button \n            class='relative bg-black text-white font-space-mono text-base py-3 pl-6 pr-12 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer uppercase group'>\n            Button\n            <i class='absolute ri-arrow-right-line text-white group-hover:-rotate-45 transition-all right-5'></i>\n          </button>"
+      },
+      {
+        "name": "Button with Shadow Animation",
+        "code": "<button \n            class='bg-black shadow-lg shadow-black/20 text-white font-space-mono text-base py-3 px-6 rounded-full hover:bg-black/75 transition-all duration-300 hover:cursor-pointer hover:shadow-none hover:translate-y-1 uppercase'>\n            Button\n          </button>\n\n          <button \n            class='bg-white shadow-lg shadow-black/20 text-black font-space-mono text-base py-3 px-6 rounded-full border border-black/20 hover:bg-black/5 transition-all hover:cursor-pointer hover:shadow-none hover:translate-y-1 uppercase'>\n            Button\n          </button>"
+      }
+    ]
+  },
+  {
+    "id": "Cards",
+    "name": "Cards",
+    "description": "Responsive card components for organizing content clearly. Built with accessibility in mind and designed for easy reuse and TailwindCSS-driven layout customization.",
+    "components": [
+      {
+        "name": "Product Card",
+        "code": "<div class='w-full max-w-sm bg-white rounded-xl border border-black/10 overflow-hidden group'>\n          <div class='relative w-full h-48 overflow-hidden'>\n            <img class='w-full h-full object-cover group-hover:scale-110 transition-all' src='https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='Image'>\n          </div>\n            <div class='p-6'>\n              <h3 class='text-xl font-grotesk font-semibold text-gray-800 mb-2'>Product Name</h3>\n              <p class='text-black/55 font-manrope mb-4'>Product description goes here. It can be a few sentences describing the product.</p>\n              <div class='flex items-center justify-between'>\n                <span class='font-grotesk text-2xl font-bold text-gray-900'>$99.99</span>\n                <button class='px-4 py-2 font-grotesk bg-avocado-500 text-black rounded-lg hover:brightness-95 transition-all'>\n                  Add to Cart\n                </button>\n              </div>\n            </div>\n          </div>"
+      },
+      {
+        "name": "Testimonial Card",
+        "code": "<div class='max-w-sm rounded-lg border border-black/10 bg-white p-5 transition-all group flex flex-col gap-4 hover:border-avocado-500'>\n  <i class='ri-double-quotes-l text-4xl text-avocado-700'></i>\n  <p class='font-manrope line-clamp-3 text-black/55'>\n    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.\n  </p>\n  <div class='flex w-full flex-row items-center gap-3 pt-2'>\n    <img\n      src='https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=40&h=40&fit=crop&crop=face'\n      alt='Profile Icon'\n      class='w-11 h-11 rounded-full object-cover'\n    />\n    <div>\n      <h6 class='font-grotesk font-bold'>JANE DOE</h6>\n      <div class='flex flex-row items-center gap-1'>\n        <i class='ri-star-fill text-yellow-400'></i>\n        <p class='font-grotesk'>10.0</p>\n      </div>\n    </div>\n  </div>\n</div>"
+      },
+      {
+        "name": "Blog Post Card",
+        "code": "<div class='w-full max-w-sm bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group border border-gray-100'>\n  <div class='relative w-full h-56 overflow-hidden'>\n    <img class='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out' src='https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=800&auto=format&fit=crop' alt='Blog post image'>\n    <span class='absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-bold text-gray-800 rounded-full uppercase tracking-wider'>Design</span>\n  </div>\n  <div class='p-6'>\n    <h3 class='text-xl font-grotesk font-bold text-gray-900 mb-3 group-hover:text-avocado-600 transition-colors duration-200 line-clamp-2'>The Future of Minimalist UI Design in 2026</h3>\n    <p class='text-gray-500 font-manrope mb-6 line-clamp-3 text-sm leading-relaxed'>Explore the emerging trends in user interface design, focusing on simplicity, accessibility, and whitespace to create profound user experiences.</p>\n    <div class='flex items-center justify-between border-t border-gray-50 pt-4'>\n      <div class='flex items-center gap-3'>\n        <img src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face' alt='Author' class='w-10 h-10 rounded-full object-cover'>\n        <div>\n          <p class='text-sm font-grotesk font-semibold text-gray-900'>Sarah Jenkins</p>\n          <p class='text-xs text-gray-500 font-manrope'>May 12, 2026</p>\n        </div>\n      </div>\n      <span class='text-xs text-gray-400 font-space-mono'>5 min read</span>\n    </div>\n  </div>\n</div>"
+      },
+      {
+        "name": "Premium E-commerce Card",
+        "code": "<div class='w-full max-w-sm bg-gray-50 rounded-2xl overflow-hidden group relative p-2'>\n  <div class='relative w-full h-64 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center mb-4'>\n    <span class='absolute top-3 left-3 bg-black text-white px-3 py-1 text-xs font-bold rounded-full z-10'>NEW</span>\n    <img class='w-3/4 h-3/4 object-contain group-hover:scale-110 transition-transform duration-500 ease-out' src='https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop' alt='Product image'>\n    <div class='absolute bottom-0 left-0 w-full p-4 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out'>\n      <button class='w-full bg-black text-white font-space-mono py-3 rounded-xl hover:bg-gray-800 transition-colors shadow-lg uppercase'>Add to Cart</button>\n    </div>\n  </div>\n  <div class='px-2 pb-2'>\n    <div class='flex justify-between items-start mb-1'>\n      <h3 class='text-lg font-grotesk font-bold text-gray-900'>Premium Headphones</h3>\n      <span class='text-lg font-space-mono font-bold text-gray-900'>$299</span>\n    </div>\n    <div class='flex items-center gap-1 text-sm'>\n      <i class='ri-star-fill text-yellow-400'></i>\n      <i class='ri-star-fill text-yellow-400'></i>\n      <i class='ri-star-fill text-yellow-400'></i>\n      <i class='ri-star-fill text-yellow-400'></i>\n      <i class='ri-star-half-fill text-yellow-400'></i>\n      <span class='text-gray-500 font-manrope ml-1'>(128)</span>\n    </div>\n  </div>\n</div>"
+      },
+      {
+        "name": "Feature Benefit Card",
+        "code": "<div class='w-full max-w-sm p-8 bg-white rounded-2xl border border-neutral-100 hover:border-avocado-400 hover:shadow-xl hover:shadow-avocado-500/10 hover:-translate-y-1 transition-all duration-300 group'>\n  <div class='w-14 h-14 rounded-2xl bg-gradient-to-br from-avocado-100 to-avocado-300 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>\n    <i class='ri-rocket-line text-2xl text-avocado-700'></i>\n  </div>\n  <h3 class='text-xl font-grotesk font-bold text-gray-900 mb-3'>Lightning Fast</h3>\n  <p class='text-gray-500 font-manrope leading-relaxed text-sm'>Optimized for speed and performance, ensuring your users never have to wait. Built with modern tooling for maximum efficiency.</p>\n</div>"
+      },
+      {
+        "name": "Dashboard Metric Card",
+        "code": "<div class='w-full max-w-sm p-6 bg-white rounded-xl border border-gray-100 shadow-sm'>\n  <div class='flex justify-between items-start mb-4'>\n    <h3 class='text-sm font-semibold text-gray-500 font-manrope uppercase tracking-wider'>Total Revenue</h3>\n    <button class='text-gray-400 hover:text-gray-900 transition-colors'>\n      <i class='ri-more-2-fill text-lg'></i>\n    </button>\n  </div>\n  <div class='flex items-end gap-4 mb-1'>\n    <h2 class='text-4xl font-grotesk font-bold text-gray-900'>$124,500</h2>\n  </div>\n  <div class='flex items-center gap-2'>\n    <span class='inline-flex items-center gap-1 bg-green-50 text-green-700 px-2 py-0.5 rounded text-xs font-bold font-space-mono'>\n      <i class='ri-arrow-up-line'></i> 12.4%\n    </span>\n    <span class='text-xs text-gray-400 font-manrope'>vs last month</span>\n  </div>\n</div>"
+      }
+    ]
+  },
+  {
+    "id": "Inputs",
+    "name": "Inputs",
+    "description": "Form input components supporting validation, focus states, and accessibility standards. Easily reusable and customizable using TailwindCSS for consistent, responsive form interfaces.",
+    "components": [
+      {
+        "name": "Default Input",
+        "code": "<div class='flex flex-col gap-2 w-full max-w-sm'>\n            <label for='basic-input' class='font-grotesk font-semibold text-gray-800 text-sm'>Username</label>\n            <input type='text' id='basic-input' class='w-full px-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='Enter username'>\n          </div>"
+      },
+      {
+        "name": "Inputs with Icon",
+        "code": "<div class='flex flex-col gap-2 w-full max-w-sm'>\n            <label for='left-icon-input' class='font-grotesk font-semibold text-gray-800 text-sm'>Email Address</label>\n            <div class='relative'>\n              <div class='absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 flex items-center justify-center'>\n                <i class='ri-mail-line text-lg'></i>\n              </div>\n              <input type='email' id='left-icon-input' class='w-full pl-11 pr-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='you@example.com'>\n            </div>\n          </div>\n\n          <div class='flex flex-col gap-2 w-full max-w-sm'>\n            <label for='right-icon-input' class='font-grotesk font-semibold text-gray-800 text-sm'>Search</label>\n            <div class='relative'>\n              <input type='text' id='right-icon-input' class='w-full pl-4 pr-11 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='Search items...'>\n              <div class='absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 flex items-center justify-center hover:text-black transition-colors cursor-pointer'>\n                <i class='ri-search-line text-lg'></i>\n              </div>\n            </div>\n          </div>"
+      }
+    ]
+  },
+  {
+    "id": "Text-Areas",
+    "name": "Text Areas",
+    "description": "Accessible textarea components for longer user input. Responsive, reusable, and fully customizable with TailwindCSS utilities to match any production-ready form design.",
+    "components": [
+      {
+        "name": "Default Text Area",
+        "code": "<div class='flex flex-col gap-2 w-full max-w-sm'>\n            <label for='message' class='font-grotesk font-semibold text-gray-800 text-sm'>Your Message</label>\n            <textarea id='message' rows='4' class='w-full px-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 transition-all font-manrope placeholder-black/30' placeholder='Write your message here...'></textarea>\n          </div>"
+      }
+    ]
+  },
+  {
+    "id": "Pagination",
+    "name": "Pagination",
+    "description": "Responsive pagination components for navigating large datasets. Accessible, reusable, and easily styled with TailwindCSS to integrate seamlessly into any application layout.",
+    "components": [
+      {
+        "name": "Simple Pagination",
+        "code": "<div class='flex items-center gap-2'>\n            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>\n              <i class='ri-arrow-left-s-line'></i>\n            </button>\n            <button class='w-10 h-10 flex items-center justify-center rounded-lg bg-avocado-500 text-black font-semibold transition-all shadow-sm'>\n              1\n            </button>\n            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>\n              2\n            </button>\n            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>\n              3\n            </button>\n            <button class='w-10 h-10 flex items-center justify-center rounded-lg border border-black/10 text-gray-600 hover:bg-avocado-500 hover:text-black hover:border-avocado-500 transition-all'>\n              <i class='ri-arrow-right-s-line'></i>\n            </button>\n          </div>"
+      }
+    ]
+  },
+  {
+    "id": "Badges",
+    "name": "Badges",
+    "description": "Small, reusable badge components for labels, statuses, and counts. Accessible, responsive, and customizable using TailwindCSS for consistent visual communication.",
+    "components": [
+      {
+        "name": "Status Badges",
+        "code": "<div class='flex flex-wrap gap-3'>\n            <span class='px-3 py-1 bg-avocado-500 text-black font-space-mono text-xs rounded-full uppercase tracking-wider font-semibold'>Active</span>\n            <span class='px-3 py-1 bg-gray-100 text-gray-600 font-space-mono text-xs rounded-full border border-gray-200 uppercase tracking-wider font-semibold'>Inactive</span>\n            <span class='px-3 py-1 bg-avocado-500/20 text-avocado-700 font-space-mono text-xs rounded-full border border-avocado-500/30 uppercase tracking-wider font-semibold'>New</span>\n            <span class='px-3 py-1 bg-black text-white font-space-mono text-xs rounded-full uppercase tracking-wider font-semibold'>Premium</span>\n          </div>"
+      }
+    ]
+  },
+  {
+    "id": "Select-Options",
+    "name": "Select Options",
+    "description": "Accessible select components with consistent styling and interaction states. Reusable and responsive, with full TailwindCSS customization for modern form experiences.",
+    "components": [
+      {
+        "name": "Stylized Select",
+        "code": "<div class='flex flex-col gap-2 w-full max-w-sm'>\n            <label for='options' class='font-grotesk font-semibold text-gray-800 text-sm'>Select an option</label>\n            <div class='relative'>\n              <select id='options' class='w-full px-4 py-3 rounded-lg border border-black/10 focus:outline-none focus:border-avocado-500 focus:ring-1 focus:ring-avocado-500 appearance-none bg-white font-manrope text-gray-800 transition-all hover:cursor-pointer hover:border-black/30'>\n                <option value='' disabled selected>Choose a plan...</option>\n                <option value='basic'>Basic Plan</option>\n                <option value='pro'>Pro Plan</option>\n                <option value='enterprise'>Enterprise Plan</option>\n              </select>\n              <div class='absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500 flex items-center justify-center'>\n                <i class='ri-arrow-down-s-line text-lg'></i>\n              </div>\n            </div>\n          </div>"
+      }
+    ]
+  },
+  {
+    "id": "Breadcrumbs",
+    "name": "Breadcrumbs",
+    "description": "Accessible breadcrumb components for showing navigation hierarchy. Responsive, reusable, and easily customizable with TailwindCSS for clear and structured user navigation.",
+    "components": [
+      {
+        "name": "Basic Breadcrumbs",
+        "code": "<nav class='flex items-center text-sm font-manrope text-gray-500 gap-2'>\n            <a href='#' class='hover:text-avocado-600 hover:underline underline-offset-4 transition-all'>Home</a>\n            <i class='ri-arrow-right-s-line text-black/30'></i>\n            <a href='#' class='hover:text-avocado-600 hover:underline underline-offset-4 transition-all'>Products</a>\n            <i class='ri-arrow-right-s-line text-black/30'></i>\n            <span class='text-gray-900 font-semibold'>Current Page</span>\n          </nav>"
+      }
+    ]
+  }
+]
